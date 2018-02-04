@@ -24,7 +24,16 @@ echo
 echo Scala:
 time scala Liczbys
 echo
+echo
+echo PHP:
+time php liczby.php 
+echo
+echo Python
+time python liczby.py
+echo
 echo ++++++++++++++++++++
+echo
+echo
 echo teraz duży przedział 512k
 echo
 echo C:
