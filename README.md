@@ -12,8 +12,9 @@ tylko dla udokumentowania kilku snipetów, dla kiku języków. Przy okazji bench
 * php
 * python
 
+
 ### W celu ściągnięcia plików, kompilacji programów i wykonania benchmarku:
-<br>$ git clone https://github.com/btertil/liczby_pierwsze
+$ git clone https://github.com/btertil/liczby_pierwsze
 <br>$ cd liczby_pierwsze
 <br>$ chmod +x *.sh
 <br>$ ./compile.sh
