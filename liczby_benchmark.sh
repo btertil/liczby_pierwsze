@@ -28,7 +28,7 @@ echo
 echo PHP:
 time php liczby.php 
 echo
-echo Python
+echo Python:
 time python liczby.py
 echo
 echo ++++++++++++++++++++
