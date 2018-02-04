@@ -1,9 +1,9 @@
 
-case class Primes512k(prz: Int) {
+case class Primes(prz: Int) {
 
   def this() {
-    this(512000)
-    println("Uwaga! Domyślny zakres przeszukiwania: 512000")
+    this(30000)
+    println("Uwaga! Domyślny zakres przeszukiwania: 30000")
   }
 
   private def szukaj(i : Int): Int = {
@@ -35,7 +35,7 @@ case class Primes512k(prz: Int) {
 
 object Liczbys64 extends App {
 
-  val a = new Primes512k
+  val a = new Primes(512000)
   println(a.toString)
 
 }
