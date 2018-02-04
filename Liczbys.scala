@@ -35,7 +35,7 @@ case class Primes30k(prz: Int) {
 
 object Liczbys extends App {
 
-  val a = new Primes30k
+  val a = new Primes30k(30000)
   println(a.toString)
 
 }
