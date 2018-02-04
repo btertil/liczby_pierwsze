@@ -19,6 +19,6 @@ $ git clone https://github.com/btertil/liczby_pierwsze
 <br>$ cd liczby_pierwsze
 <br>$ chmod +x *.sh
 <br>$ ./compile.sh
-<br>$ ./liczby_benchmark.sh
+<br>$ ./benchmark.sh
 
 #### Jeśli kompilujesz na sytemie 32 bitowym, użyj *compile32.sh* zamiast compile.sh
