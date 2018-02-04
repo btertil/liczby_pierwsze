@@ -22,7 +22,7 @@ echo Java:
 time java Liczby
 echo
 echo Scala:
-time scala liczbys
+time scala Liczbys
 echo
 echo ++++++++++++++++++++
 echo teraz duży przedział 512k
@@ -34,5 +34,5 @@ echo Java:
 time java Liczby64
 echo
 echo Scala:
-time scala liczbys64
+time scala Liczbys64
 echo
