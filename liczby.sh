@@ -1,8 +1,6 @@
 #! /bin/bash
 
 echo
-echo ">> liczbyf <<" && time ./liczbyf 
-echo
 echo ">> liczbyn <<" && time ./liczbyn 
 echo 
 echo ">> liczbyc <<" && time ./liczbyc 
