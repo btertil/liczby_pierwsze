@@ -3,3 +3,18 @@
 
 proste programy do obliczania liczby liczb pierszych w zadanych przedziałach
 tylko dla udokumentowania kilku snipetów, dla kiku języków. Przy okazji benchmark wydajności dla tych języków (ta sama logika implementowana)
+
+### konieczne zainstalowane komponenty
+* gcc
+* nasm
+* java
+* scala
+* php
+* python
+
+### W celu ściągnięcia plików, kompilacji programów i wykonania benchmarku:
+$ git clone https://github.com/btertil/liczby_pierwsze
+$ cd liczby_pierwsze
+$ chmod +x *.sh
+$ ./compile.sh
+$ ./liczby_benchmark.sh
