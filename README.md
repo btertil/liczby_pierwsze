@@ -1,0 +1,1 @@
+# liczby_pierwsze
