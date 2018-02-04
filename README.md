@@ -13,8 +13,8 @@ tylko dla udokumentowania kilku snipetów, dla kiku języków. Przy okazji bench
 * python
 
 ### W celu ściągnięcia plików, kompilacji programów i wykonania benchmarku:
-$ git clone https://github.com/btertil/liczby_pierwsze
-$ cd liczby_pierwsze
-$ chmod +x *.sh
-$ ./compile.sh
-$ ./liczby_benchmark.sh
+<br>$ git clone https://github.com/btertil/liczby_pierwsze
+<br>$ cd liczby_pierwsze
+<br>$ chmod +x *.sh
+<br>$ ./compile.sh
+<br>$ ./liczby_benchmark.sh
