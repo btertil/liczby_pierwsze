@@ -4,10 +4,11 @@
 proste programy do obliczania liczby liczb pierszych w zadanych przedziałach
 tylko dla udokumentowania kilku snipetów, dla kiku języków. Przy okazji benchmark wydajności dla tych języków (ta sama logika implementowana)
 
-### konieczne zainstalowane komponenty
+### konieczne komponenty do kompilacji:
 * gcc
 * nasm
-* java
+* java jre
+* java sdk (development kit)
 * scala
 * php
 * python
@@ -20,4 +21,4 @@ $ git clone https://github.com/btertil/liczby_pierwsze
 <br>$ ./compile.sh
 <br>$ ./liczby_benchmark.sh
 
-#### Jeśli kompilujesz na sytemie 32 bitowym, użyj **compile32.sh** zamiast compile.sh
+#### Jeśli kompilujesz na sytemie 32 bitowym, użyj *compile32.sh* zamiast compile.sh
