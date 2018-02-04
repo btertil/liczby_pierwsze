@@ -9,4 +9,4 @@ javac Liczby64.java
 scalac Liczbys.scala
 scalac Liczbys64.scala
 
-nasm -felf64 -o liczbyn.o && ld liczbyn.o -o liczbyn
+nasm -felf64 liczbyn.asm -o liczbyn.o && ld liczbyn.o -o liczbyn
