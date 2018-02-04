@@ -1,5 +1,5 @@
 
-case class Primes30k(prz: Int) {
+case class Primes(prz: Int) {
 
   def this() {
     this(30000)
