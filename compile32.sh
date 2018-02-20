@@ -1,8 +1,8 @@
 #! /bin/bash
 
-gcc -o liczbyc liczbyc.c
-gcc -o liczbyc64 liczbyc64.c
-gcc -o primes primes.c
+gcc -o liczbyc liczbyc.c -lm
+gcc -o liczbyc64 liczbyc64.c -lm
+gcc -o primes primes.c -lm
 
 javac Liczby.java
 javac Liczby64.java
