@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 int main(int argc, char **argv)
 {
@@ -28,7 +29,7 @@ int main(int argc, char **argv)
 
    for (i=3; i <= prz; i++) {
         flaga = 0;
-        zakres = (unsigned int) ((i/2)+1);
+        zakres = (unsigned int) sqrt(i)+1;
         for (j=2; j< zakres; j++) {
             testy++;
             reszta = i%j;

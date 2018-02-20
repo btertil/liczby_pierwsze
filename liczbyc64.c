@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <math.h>
 
 int main(void)
 {
@@ -11,7 +11,7 @@ int main(void)
 
    for (i=3; i <= prz; i++) {
         flaga = 0;
-        zakres = (unsigned int) (i/2)+1;
+        zakres = (unsigned int) sqrt(i)+1;
         for (j=2; j<zakres; j++) {
             reszta = i%j;
             if (reszta == 0) {
