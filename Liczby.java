@@ -12,7 +12,7 @@ public class Liczby {
 
 	   for (i=3; i <= prz; i++) {
   		flaga = 0;
-	  	zakres = (int) (i/2)+1;
+	  	zakres = (int) Math.sqrt(i)+1;
 	    	for (j=2; j<zakres; j++) {
 		      reszta = i%j;
 		      if (reszta == 0) {

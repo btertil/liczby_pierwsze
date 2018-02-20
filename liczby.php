@@ -6,7 +6,7 @@ $znalezione = 1; //2 to liczba pierwsza (1 NIE jest!)
 
    for ($i=3; $i <= $prz; $i++) {
         $flaga = 0;
-	$zakres = ($i/2)+1;
+	$zakres = floor(sqrt($i))+1;
         for ($j=2; $j< $zakres; $j++) {
             $reszta = $i%$j;
             if ($reszta == 0) {
@@ -20,6 +20,6 @@ $znalezione = 1; //2 to liczba pierwsza (1 NIE jest!)
 	}
   }	
 
-  echo "W przedziale 0 - $prz znaleziono: $znalezione liczb pierwszych";
+  echo "W przedziale 0 - $prz znaleziono: $znalezione liczb pierwszych\n";
 
 ?>

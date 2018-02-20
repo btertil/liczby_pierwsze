@@ -45,3 +45,6 @@ echo
 echo Scala:
 time scala Liczbys64
 echo
+echo
+echo Python
+echo time python liczby64.py

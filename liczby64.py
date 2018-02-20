@@ -1,6 +1,6 @@
 from math import sqrt
 
-prz = 30000
+prz = 512000
 znalezione = 1  # 2 to liczba pierwsza (1 NIE jest!)
 
 for i in range(3, prz+1):
