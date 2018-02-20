@@ -7,7 +7,7 @@ case class Primes(prz: Int) {
   }
 
   private def szukaj(i : Int): Int = {
-    for (j <- 2 to math.ceil(i / 2).toInt) { if (i % j == 0) return 0 }
+    for (j <- 2 to math.ceil(math.sqrt(i)).toInt) { if (i % j == 0) return 0 }
     1 // Jeśli cała pętla nie było ani razu dzielenia bez reszty to kolejna liczba pierwsza
   }
   
