@@ -45,6 +45,8 @@ echo
 echo Scala:
 time scala Liczbys64
 echo
+echo PHP
+time php liczby64.php
 echo
 echo Python
-echo time python liczby64.py
+time python liczby64.py
