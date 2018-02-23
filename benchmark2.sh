@@ -1,22 +1,23 @@
 #! /bin/bash
-
+let "test = 0"
 clear
 echo
 echo
-echo ++++++++++++++++++++
+echo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 echo
 echo Program porównuje prędkość liczenia liczb pierwszych
 echo implementujących tą samą metodę w różnych językach
 echo
-echo ++++++++++++++++++++
+echo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 echo
 echo
 for i in 100000 1000000 10000000 100000000
 do
 echo
 echo
-echo test dla przedziału 0 - $i
-echo ++++++++++++++++++++
+let "test++"
+echo test $test: dla przedziału 0 - $i
+echo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 echo
 echo C:
 time ./liczbycp $i
@@ -40,12 +41,11 @@ else
 	echo "Testy dla PHP i Pythona pominięto z uwagi na zbyt duży przedział (powyżej 1000000)"
 fi
 echo
-echo ++++++++++++++++++++
+echo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 echo
 echo
 
 done
-  
-echo "done!"
+echo "Gotowe! Liczba wykonanych testów: $test"
 
 
