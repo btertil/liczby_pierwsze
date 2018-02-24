@@ -47,5 +47,5 @@ echo
 
 done
 echo "Gotowe! Liczba wykonanych testów: $test"
-
+echo
 
