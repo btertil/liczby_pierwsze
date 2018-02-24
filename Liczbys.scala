@@ -15,7 +15,7 @@ case class Primes(prz: Int) {
 
     var znalezione = 1 //2 to liczba pierwsza (1 NIE jest liczbą pierwszą bo pierwsze muszą by wieksze od 1)
     for (i <- 3 to this.prz) znalezione += szukaj(i)
-    printf("W przedziale 0 - %d naleziono: %d liczb lierwszych\n", this.prz, znalezione)
+    printf("W przedziale 0 - %d znaleziono: %d liczb lierwszych\n", this.prz, znalezione)
   }
 
   def getPrimes : Int = {
@@ -26,7 +26,7 @@ case class Primes(prz: Int) {
   }
 
   override def toString : String = {
-    "W przedziale 0 - %d naleziono: %d liczb lierwszych".format(this.prz, this.getPrimes)
+    "W przedziale 0 - %d znaleziono: %d liczb lierwszych".format(this.prz, this.getPrimes)
   }
 
 }
