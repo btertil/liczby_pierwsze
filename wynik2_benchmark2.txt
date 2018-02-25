@@ -1,0 +1,194 @@
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Program porównuje prędkość liczenia liczb pierwszych
+implementujących tą samą metodę w różnych językach
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+test 1: dla przedziału 0 - 100000
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+C:
+W przedziale 0 - 100000 znaleziono: 9592 liczb lierwszych
+
+real	0m0.013s
+user	0m0.013s
+sys	0m0.000s
+
+Java:
+W przedziale 0 - 100000 naleziono: 9592 liczb lierwszych
+
+real	0m0.295s
+user	0m0.084s
+sys	0m0.059s
+
+Scala:
+W przedziale 0 - 100000 naleziono: 9592 liczb lierwszych
+
+real	0m0.431s
+user	0m0.463s
+sys	0m0.037s
+
+
+PHP:
+W przedziale 0 - 100000 znaleziono: 9592 liczb pierwszych
+
+real	0m0.178s
+user	0m0.141s
+sys	0m0.011s
+
+Python:
+W przedziale 0 - 100000 znaleziono: 9592 liczb pierwszych
+
+real	0m0.491s
+user	0m0.442s
+sys	0m0.012s
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+test 2: dla przedziału 0 - 1000000
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+C:
+W przedziale 0 - 1000000 znaleziono: 78498 liczb lierwszych
+
+real	0m0.285s
+user	0m0.281s
+sys	0m0.004s
+
+Java:
+W przedziale 0 - 1000000 naleziono: 78498 liczb lierwszych
+
+real	0m0.347s
+user	0m0.357s
+sys	0m0.012s
+
+Scala:
+W przedziale 0 - 1000000 naleziono: 78498 liczb lierwszych
+
+real	0m0.544s
+user	0m0.648s
+sys	0m0.058s
+
+
+PHP:
+W przedziale 0 - 1000000 znaleziono: 78498 liczb pierwszych
+
+real	0m2.030s
+user	0m2.025s
+sys	0m0.004s
+
+Python:
+W przedziale 0 - 1000000 znaleziono: 78498 liczb pierwszych
+
+real	0m11.302s
+user	0m11.302s
+sys	0m0.000s
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+test 3: dla przedziału 0 - 10000000
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+C:
+W przedziale 0 - 10000000 znaleziono: 664579 liczb lierwszych
+
+real	0m7.044s
+user	0m7.044s
+sys	0m0.000s
+
+Java:
+W przedziale 0 - 10000000 naleziono: 664579 liczb lierwszych
+
+real	0m6.649s
+user	0m7.467s
+sys	0m1.777s
+
+Scala:
+W przedziale 0 - 10000000 naleziono: 664579 liczb lierwszych
+
+real	0m5.883s
+user	0m6.003s
+sys	0m0.068s
+
+
+Testy dla PHP i Pythona pominięto z uwagi na zbyt duży przedział (powyżej 1000000)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+test 4: dla przedziału 0 - 100000000
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+C:
+W przedziale 0 - 100000000 znaleziono: 5761455 liczb lierwszych
+
+real	3m5.333s
+user	3m5.331s
+sys	0m0.000s
+
+Java:
+W przedziale 0 - 100000000 naleziono: 5761455 liczb lierwszych
+
+real	2m56.634s
+user	3m53.637s
+sys	1m55.607s
+
+Scala:
+W przedziale 0 - 100000000 naleziono: 5761455 liczb lierwszych
+
+real	2m23.635s
+user	2m23.986s
+sys	0m0.219s
+
+
+Testy dla PHP i Pythona pominięto z uwagi na zbyt duży przedział (powyżej 1000000)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+test 5: dla przedziału 0 - 500000000
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+C:
+W przedziale 0 - 500000000 znaleziono: 26355867 liczb lierwszych
+
+real	31m0.579s
+user	31m0.556s
+sys	0m0.000s
+
+Java:
+W przedziale 0 - 500000000 naleziono: 26355867 liczb lierwszych
+
+real	29m34.058s
+user	39m26.801s
+sys	19m37.595s
+
+Scala:
+W przedziale 0 - 500000000 naleziono: 26355867 liczb lierwszych
+
+real	23m49.692s
+user	23m51.453s
+sys	0m0.965s
+
+
+Testy dla PHP i Pythona pominięto z uwagi na zbyt duży przedział (powyżej 1000000)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+Gotowe! Liczba wykonanych testów: 5
+
