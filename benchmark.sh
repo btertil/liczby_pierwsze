@@ -11,7 +11,7 @@ echo ++++++++++++++++++++
 echo
 echo
 echo mały przedział 30k
-eecho
+echo
 echo "Assembly (FASM):"
 time ./liczbyf
 echo

@@ -1,6 +1,6 @@
 ; kompilacja z FASM
 
-format ELF64 executable
+format ELF executable
 ;format PE64
 
 segment readable writeable		;musi być writeable od ostatnich wersji Linuxa bo się crashuje inaczej (na stronie FASM)
