@@ -11,6 +11,9 @@ echo ++++++++++++++++++++
 echo
 echo
 echo mały przedział 30k
+eecho
+echo "Assembly (FASM):"
+time ./liczbyf
 echo
 echo "Assembly (NASM):"
 time ./liczbyn

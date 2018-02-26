@@ -14,3 +14,4 @@ scalac Liczbys.scala
 scalac Liczbys64.scala
 
 nasm -felf32 liczbyn.asm -o liczbyn.o && ld liczbyn.o -o liczbyn
+fasm liczbyf.asm
