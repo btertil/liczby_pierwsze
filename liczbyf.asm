@@ -1,9 +1,10 @@
 ; kompilacja z FASM
 
-format PE64
+format ELF64 executable
+;format PE64
 
-;segment readable
-section '.data'  readable
+segment readable writeable		;musi być writeable od ostatnich wersji Linuxa bo się crashuje inaczej (na stronie FASM)
+;section '.data'  readable
 
 liczba dw 0;
 przywitanie db 'Program zlicza liczby pierwsze w przedziale 0 - 30 000',0ah
@@ -16,8 +17,8 @@ komunikat2 db ' liczb pierwszych.',0ah
 komunikat2_end = $-komunikat2
 
 
-;segment executable
-section '.text' code readable executable
+segment readable executable
+;section '.text' code readable executable
 
 entry $
 
