@@ -4,7 +4,7 @@
 
 int main(int argc, char **argv)
 {
-   unsigned int prz, i, j, zakres;
+   unsigned int prz, i, j, j_incr, zakres;
    unsigned int znalezione, reszta, flaga;
    unsigned long testy = 0;
 
@@ -30,9 +30,11 @@ int main(int argc, char **argv)
    for (i=3; i <= prz; i++) {
         flaga = 0;
         zakres = (unsigned int) sqrt(i)+1;
-        for (j=2; j< zakres; j++) {
+				j_incr = 1;
+        for (j=2; j< zakres; j = j + j_incr) {
             testy++;
             reszta = i%j;
+						if (j == 3) j_incr = 2;
             if (reszta == 0) {
                 flaga++;
                 break;
