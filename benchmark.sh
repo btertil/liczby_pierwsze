@@ -1,55 +1,51 @@
 #! /bin/bash
-
+let "test = 0"
+clear
 echo
 echo
-echo ++++++++++++++++++++
+echo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 echo
 echo Program porównuje prędkość liczenia liczb pierwszych
 echo implementujących tą samą metodę w różnych językach
 echo
-echo ++++++++++++++++++++
+echo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 echo
 echo
-echo mały przedział 30k
-echo
-echo "Assembly (FASM):"
-time ./liczbyf
-echo
-echo "Assembly (NASM):"
-time ./liczbyn
-echo
-echo C:
-time ./liczbyc
-echo
-echo Java:
-time java Liczby
-echo
-echo Scala:
-time scala Liczbys
+for i in 100000 1000000 10000000 100000000 1000000000
+do
 echo
 echo
-echo PHP:
-time php liczby.php 
-echo
-echo Python:
-time python liczby.py
-echo
-echo ++++++++++++++++++++
-echo
-echo
-echo teraz duży przedział 512k
+let "test++"
+echo test $test: dla przedziału 0 - $i
+echo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 echo
 echo C:
-time ./liczbyc64
+time ./liczbyp $i
 echo
 echo Java:
-time java Liczby64
+time java Liczbyp $i
 echo
 echo Scala:
-time scala Liczbys64
+time scala Liczbysp $i
+if [ $i -lt  10000000 ] ; then
+	echo
+	echo
+	echo PHP:
+	time php liczbyp.php $i
+	echo
+	echo Python:
+	time python liczbyp.py $i
+else
+	echo
+	echo
+	echo "Testy dla PHP i Pythona pominięto z uwagi na zbyt duży przedział (powyżej 1000000)"
+fi
 echo
-echo PHP
-time php liczby64.php
+echo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 echo
-echo Python
-time python liczby64.py
+echo
+
+done
+echo "Gotowe! Liczba wykonanych testów: $test"
+echo
+
