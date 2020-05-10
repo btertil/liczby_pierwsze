@@ -3,7 +3,7 @@ public class Liczbyp {
 
 	public static void main(String[] args)
 	{
-	   int prz, i, j, zakres;
+	   int prz, i, j, j_incr, zakres;
 	   int znalezione, reszta, flaga;
 	   prz = Integer.parseInt(args[0]);
 
@@ -13,8 +13,10 @@ public class Liczbyp {
 	   for (i=3; i <= prz; i++) {
   		flaga = 0;
 	  	zakres = (int) Math.sqrt(i)+1;
-	    	for (j=2; j<zakres; j++) {
+			j_incr = 1;
+	    	for (j=2; j<zakres; j = j + j_incr) {
 		      reszta = i%j;
+					if (j == 3) j_incr = 2;
 		      if (reszta == 0) {
 		      	flaga++;
       			break;
