@@ -5,5 +5,5 @@ gcc -o primes primes.c -lm
 
 javac Liczbyp.java
 
-scalac Liczbysp.scala
+scalac Liczbysp.scala -d liczbysp.jar
 

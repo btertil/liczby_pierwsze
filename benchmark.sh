@@ -26,7 +26,7 @@ echo Java:
 time java Liczbyp $i
 echo
 echo Scala:
-time scala Liczbysp $i
+time scala liczbysp.jar $i
 if [ $i -lt  10000000 ] ; then
 	echo
 	echo
