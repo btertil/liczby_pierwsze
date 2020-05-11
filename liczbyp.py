@@ -16,4 +16,4 @@ for i in range(3, prz+1):
     if flaga == 0:
         znalezione += 1
 
-print("W przedziale 0 - %s znaleziono: %s liczb pierwszych" % (prz, znalezione))
+print("W przedziale do %s znaleziono %s liczb pierwszych" % (prz, znalezione))

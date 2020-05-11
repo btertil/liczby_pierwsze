@@ -29,7 +29,7 @@ public class Liczbyp {
     }
    }
 
-	    System.out.printf("W przedziale 0 - %d znaleziono: %d liczb lierwszych\n", prz, znalezione);
+	    System.out.printf("W przedziale do %d znaleziono %d liczb pierwszych\n", prz, znalezione);
     }
 
   }

@@ -30,7 +30,7 @@ int main(int argc, char **argv)
 
    }
 
-    printf("W przedziale 0 - %i znaleziono: %i liczb lierwszych\n", prz, znalezione);
+    printf("W przedziale do %i znaleziono %i liczb pierwszych\n", prz, znalezione);
 
     return 0;
 }

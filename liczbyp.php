@@ -22,6 +22,6 @@ for ($i=3; $i <= $prz; $i++) {
 	}
 }	
 
-echo "W przedziale do $prz znaleziono: $znalezione liczb pierwszych\n";
+echo "W przedziale do $prz znaleziono $znalezione liczb pierwszych\n";
 
 ?>
