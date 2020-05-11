@@ -6,4 +6,5 @@ gcc -o primes primes.c -lm
 javac Liczbyp.java
 
 scalac Liczbysp.scala -d liczbysp.jar
+scalac LiczbyspParallel.scala -d liczbysp_parallel.jar
 
