@@ -2,32 +2,32 @@
 #include <stdlib.h>
 #include <math.h>
 
-int main(int argc, char **argv)
-{
-   unsigned int prz, i, j, j_incr, zakres;
-   unsigned int znalezione, reszta, flaga;
-   unsigned long testy = 0;
+int main(int argc, char **argv) {
+  
+    unsigned int prz, i, j, j_incr, zakres;
+    unsigned int znalezione, reszta, flaga;
+    unsigned long testy = 0;
 
-   FILE *fp;
+    FILE *fp;
 
 
-   if (argc < 2) {
+    if (argc < 2) {
         printf("Usage: %s <test_limit_figure>\n", argv[0]);
         exit(1);
-   }
+    }
 
-   prz = atoi(argv[1]);
-   if (prz < 2)  {
+    prz = atoi(argv[1]);
+    if (prz < 2)  {
         printf("The first tested number should be equal or above 2, entered number was %s \n", argv[1]);
         exit(2);
-  }
+    }
 
-   znalezione = 1; //2 to liczba pierwsza (1 NIE jest!)
+    znalezione = 1; //2 to liczba pierwsza (1 NIE jest!)
 
-   fp = fopen("primes.txt","w");
-   fputs("2\n",fp);
+    fp = fopen("primes.txt","w");
+    fputs("2\n",fp);
 
-   for (i=3; i <= prz; i++) {
+    for (i=3; i <= prz; i++) {
         flaga = 0;
         zakres = (unsigned int) sqrt(i) + 1;
         j_incr = 1;
@@ -45,12 +45,11 @@ int main(int argc, char **argv)
             znalezione++;
             fprintf(fp,"%i\n",i);
         }
-  }
+    }
 
-  fclose(fp);
+    fclose(fp);
 
-  printf("W przedziale 0 - %i znaleziono: %i liczb lierwszych, wykonano %lu testów\n", prz, znalezione, testy);
-
-  return 0;
+    printf("W przedziale 0 - %i znaleziono: %i liczb lierwszych, wykonano %lu testów\n", prz, znalezione, testy);
+    return 0;
 
 }
