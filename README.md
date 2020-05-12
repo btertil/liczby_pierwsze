@@ -6,7 +6,6 @@ tylko dla udokumentowania kilku snipetów, dla kiku języków. Przy okazji bench
 
 ### konieczne komponenty do kompilacji:
 * gcc
-* nasm, fasm (opcjonalnie dla porównania z Assembly w folderze old)
 * java jre
 * java sdk (development kit)
 * scala
@@ -21,4 +20,3 @@ $ git clone https://github.com/btertil/liczby_pierwsze
 <br>$ ./compile.sh
 <br>$ ./benchmark.sh
 
-#### Jeśli kompilujesz na sytemie 32 bitowym, użyj *compile32.sh* zamiast compile.sh (dla Assembly)
