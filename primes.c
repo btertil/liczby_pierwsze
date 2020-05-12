@@ -49,7 +49,7 @@ int main(int argc, char **argv) {
 
     fclose(fp);
 
-    printf("W przedziale 0 - %i znaleziono: %i liczb lierwszych, wykonano %lu testów\n", prz, znalezione, testy);
+    printf("W przedziale do %i znaleziono: %i liczb lierwszych, wykonano %lu testów\n", prz, znalezione, testy);
     return 0;
 
 }
