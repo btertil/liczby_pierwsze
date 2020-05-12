@@ -1,5 +1,5 @@
 # Liczby pierwsze: porównanie benchmark języków
-### C vs Java vs Scala vs Python vs PHP (także Assembly fasm & nasm ale tylko w folderze old)
+### C vs Java vs Scala vs Python vs PHP
 
 proste programy do obliczania liczby liczb pierszych w zadanych przedziałach
 tylko dla udokumentowania kilku snipetów, dla kiku języków. Przy okazji benchmark wydajności dla tych języków (ta sama logika implementowana)
