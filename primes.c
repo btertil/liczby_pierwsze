@@ -12,13 +12,13 @@ int main(int argc, char **argv)
 
 
    if (argc < 2) {
-        printf("Usage: %s <test_limit_figure>\n",argv[0]);
+        printf("Usage: %s <test_limit_figure>\n", argv[0]);
         exit(1);
    }
 
    prz = atoi(argv[1]);
    if (prz < 2)  {
-        printf("The first tested number should be equal or above 2, entered number was %s \n",argv[1]);
+        printf("The first tested number should be equal or above 2, entered number was %s \n", argv[1]);
         exit(2);
   }
 
@@ -29,12 +29,12 @@ int main(int argc, char **argv)
 
    for (i=3; i <= prz; i++) {
         flaga = 0;
-        zakres = (unsigned int) sqrt(i)+1;
-				j_incr = 1;
+        zakres = (unsigned int) sqrt(i) + 1;
+        j_incr = 1;
         for (j=2; j< zakres; j = j + j_incr) {
             testy++;
             reszta = i%j;
-						if (j == 3) j_incr = 2;
+            if (j == 3) j_incr = 2;
             if (reszta == 0) {
                 flaga++;
                 break;
@@ -42,8 +42,8 @@ int main(int argc, char **argv)
         }
 
         if (flaga == 0) {
-                znalezione++;
-                fprintf(fp,"%i\n",i);
+            znalezione++;
+            fprintf(fp,"%i\n",i);
         }
   }
 
