@@ -39,7 +39,7 @@ object LiczbyspParallel {
 
         }
 
-        val zakres = (3 to maxBound).toVector
+        val zakres = (3 to maxBound by 2).toVector
         val found = timeIt{zakres.par.count(isPrime) + 1}
 
         println(s"W przedziale do $maxBound znaleziono $found liczb pierwszych")
