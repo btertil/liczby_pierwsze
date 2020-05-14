@@ -20,7 +20,7 @@ case class Primes(prz: Int) {
 
   def searchPrimes() = {
     var znalezione = 1 //2 to liczba pierwsza (1 NIE jest liczbą pierwszą bo pierwsze muszą by wieksze od 1)
-    for (i <- 3 to this.prz) znalezione += szukaj(i)
+    for (i <- 3 to this.prz by 2) znalezione += szukaj(i)
     printf("W przedziale do %d znaleziono %d liczb pierwszych\n", this.prz, znalezione)
   }
 

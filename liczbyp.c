@@ -11,7 +11,7 @@ int main(int argc, char **argv) {
     znalezione = 1; //2 to liczba pierwsza (1 NIE jest liczbą pierwszą bo pierwsze muszą by wieksze od 1)
 
 
-    for (i=3; i <= prz; i=i+1) {
+    for (i=3; i <= prz; i=i+2) {
         flaga = 0;
         j_incr = 1;
         zakres = (unsigned int) sqrt(i) + 1;
