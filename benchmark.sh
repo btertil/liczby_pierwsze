@@ -26,10 +26,10 @@ echo Java:
 time java Liczbyp $i
 echo
 echo Scala:
-time scala -J-Xmx18g liczbysp.jar $i
+time scala -J-Xms8g -J-Xmx25g liczbysp.jar $i
 echo
 echo Scala parallel:
-time scala -J-Xmx18g liczbysp_parallel.jar $i
+time scala -J-Xms8g -J-Xmx25g liczbysp_parallel.jar $i
 if [ $i -lt  10000000 ] ; then
 	echo
 	echo
