@@ -4,7 +4,7 @@ import sys
 prz = int(sys.argv[1])
 znalezione = 1  # 2 to liczba pierwsza (1 NIE jest!)
 
-for i in range(3, prz+1):
+for i in range(3, prz+1, 2):
     flaga = 0
     zakres = int(sqrt(i)+1)
     dzielniki = [i for i in range(2, zakres) if i < 3 or i % 2 != 0]

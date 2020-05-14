@@ -27,7 +27,7 @@ int main(int argc, char **argv) {
     fp = fopen("primes.txt","w");
     fputs("2\n",fp);
 
-    for (i=3; i <= prz; i++) {
+    for (i=3; i <= prz; i = i + 2) {
         flaga = 0;
         zakres = (unsigned int) sqrt(i) + 1;
         j_incr = 1;

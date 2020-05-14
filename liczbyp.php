@@ -4,7 +4,7 @@ $prz = $argv[1];
 $znalezione = 1; //2 to liczba pierwsza (1 NIE jest!)
 
 
-for ($i=3; $i <= $prz; $i++) {
+for ($i=3; $i <= $prz; $i = $i + 2) {
     $flaga = 0;
     $zakres = floor(sqrt($i)) + 1;
     $j_incr = 1;
