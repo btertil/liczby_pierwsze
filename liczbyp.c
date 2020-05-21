@@ -4,6 +4,7 @@
 
 int main(int argc, char **argv) {
   
+    signed int pr;
     unsigned int prz, i, j, j_incr, zakres;
     unsigned int znalezione, reszta, flaga;
     prz = atoi(argv[1]);
