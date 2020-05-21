@@ -4,7 +4,8 @@
 
 int main(int argc, char **argv) {
   
-    unsigned int prz, i, j, j_incr, zakres;
+    signed int prz;
+		unsigned int i, j, j_incr, zakres;
     unsigned int znalezione, reszta, flaga;
     unsigned long testy = 0;
 
